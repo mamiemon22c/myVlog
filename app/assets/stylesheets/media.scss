@@ -57,7 +57,9 @@
     }
   }
 
-  
+  .form__image {
+    margin: 20px 0 20px 60px;
+  }
 }
 
 
@@ -94,5 +96,13 @@
 
   .content__right__bottom--date {
     font-size: 10px;
+  }
+
+  .form__image {
+    margin: 20px 0 20px 30px;
+  }
+
+  .form__text {
+    border: 1px solid;
   }
 }

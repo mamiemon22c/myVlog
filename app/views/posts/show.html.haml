@@ -1,5 +1,6 @@
 .postTitle
   = @post.title
+
 .postDate
   = @post.created_at
 .postAuthour
@@ -7,5 +8,7 @@
   .postManage
     = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
     = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+.postImage
+  = image_tag @post.image_url if @post.image?
 .postText
   = simple_format @post.content
